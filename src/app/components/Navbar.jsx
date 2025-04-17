@@ -33,7 +33,7 @@ const NavBar = () => {
                 { label: 'Contact Us', href: '/contact-us' },
                 { label: 'Make a Payment', href: 'https://razorpay.me/@futureittouchprivatelimited' },
                 { label: 'Job Portal', href: '/job-portal' },
-                { label: 'Cert. Verification', href: '/' },
+                { label: 'Cert. Verification', href: '/certificate-verification' },
             ],
         },
         { label: 'Blog', href: '/blog' },

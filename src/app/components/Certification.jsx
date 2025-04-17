@@ -21,7 +21,7 @@ const CertificateSection = () => {
             <div className="relative md:w-1/2 flex items-center justify-center">
 
                 <Image
-                    src="/images/certificate.avif"
+                    src="/images/Certificate.png"
                     alt="Certificate"
                     width={500}
                     height={300}

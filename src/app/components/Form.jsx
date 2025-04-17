@@ -14,6 +14,7 @@ const Form = ({ setIsVisible }) => {
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
   const [loading, setloading] = useState(false)
+
   const [otpsend, setOtpsend] = useState(false)
 
   const formSubmit = async (e) => {
@@ -88,6 +89,9 @@ const Verifyotp = ({ number, setIsVisible, name, email, message, course }) => {
 
   const [otp, setOtp] = useState(new Array(6).fill(""));
 
+  const [timeLeft, setTimeLeft] = useState(60);
+  const [isTimerActive, setIsTimerActive] = useState(true);
+
   const handleChange = (element, index) => {
     if (isNaN(element.value)) return;
 
@@ -98,6 +102,20 @@ const Verifyotp = ({ number, setIsVisible, name, email, message, course }) => {
       element.nextSibling.focus();
     }
   };
+
+  useEffect(() => {
+    let timer;
+    if (isTimerActive && timeLeft > 0) {
+      timer = setInterval(() => {
+        setTimeLeft((prevTime) => prevTime - 1);
+      }, 1000);
+    } else if (timeLeft === 0) {
+      setIsTimerActive(false);
+    }
+    return () => clearInterval(timer);
+  }, [isTimerActive, timeLeft]);
+
+  
   const [loader, setLoader] = useState(false)
   const handelotp = async () => {
     const newopt = otp.join("")
