@@ -32,30 +32,18 @@ export default function RootLayout({ children }) {
           }}
         />
 
-        <meta
-          name="description"
-          content="Future IT Touch is the best Institute for Industrial Training in Chandigarh, Mohali, Panchkula for Web design, Digital Marketing, and Web & App Development."
-        />
+
         <meta property="og:type" content="website" />
         <meta
           name="p:domain_verify"
           content="964bc30138b13d0b2842eda51332c939"
         />
         <meta property="og:image" href="https://futureittouch.com/" />
-        <meta
-          property="og:title"
-          content="Industrial training Institute In Chandigarh - Future IT Touch"
-        />
-        <meta
-          property="og:description"
-          content="Future IT Touch is the best Institute for Industrial Training in Web design, Digital Marketing, and Web & App Development in Chandigarh, Mohali, Panchkula."
-        />
+
+
         <meta property="og:url" content="https://futureittouch.com/" />
         <meta property="og:site-name" content="Future IT Touch" />
-        <meta
-          name="keywords"
-          content="best industrial training institute in chandigarh, industrial training in mohali, training institute in chandigarh,best institute in chandigarh"
-        />
+
         <meta
           name="google-site-verification"
           content="1HIoSKtFtTdrT6Oty65j03ycTL2ICOD-WD60Ye4vndI"
