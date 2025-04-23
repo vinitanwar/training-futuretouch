@@ -4,7 +4,7 @@ import CourseCompo from "./CourseCompo";
 
 export async function generateStaticParams() {
   try {
-    const res = await fetch("https://gursimran.online/api/v1/coursesnew");
+    const res = await fetch("https://admin.futureittouch.com/api/v1/coursesnew");
     const data = await res.json();
 
     if (!Array.isArray(data)) {

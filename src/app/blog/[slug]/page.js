@@ -4,7 +4,7 @@ import { Compoblog } from './Compoblog'
 
 export async function generateStaticParams() {
   try {
-    const res = await fetch("https://gursimran.online/api/v1/blogs");
+    const res = await fetch("https://admin.futureittouch.com/api/v1/blogs");
     const data = await res.json();
 
     

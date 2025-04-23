@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import Select from "react-select";
 import axios from "axios";
 import Swal from "sweetalert2";
@@ -120,7 +120,7 @@ const Verifyotp = ({ number, setIsVisible, name, email, message, course }) => {
   const handelotp = async () => {
     const newopt = otp.join("")
     setLoader(true)
-    const response = await axios.post(`${baseurl}/verifyotp`, { code: newopt, number: `+91${number}`, name, email, message, course })
+    const response = await axios.post(`${baseurl}/verifyotp`, { code: newopt, number: `+91${number}`,S_name: name,S_email: email, message, course,userEmailsir:'futureittouch@gmail.com' })
     console.log(response.data)
 
    
