@@ -25,7 +25,7 @@ const NavBar = () => {
                 { label: 'Career', href: '/career' },
             ],
         },
-        { label: 'Courses', href: '', subMenu: [] },
+        { label: 'Courses', href: '/courses', subMenu: [] },
         {
             label: 'Resources',
             href: '',

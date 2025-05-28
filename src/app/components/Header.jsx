@@ -65,7 +65,7 @@ const HeaderSection = () => {
                             Contact Us
                         </Link>
                         <Link
-                            href="/service"
+                            href="/courses"
                             className="border-2 border-blue-600 text-blue-600 py-2 px-6 rounded-xl text-base font-medium hover:bg-blue-600 hover:text-white transition-shadow shadow-md hover:shadow-lg"
                         >
                             Explore Program
